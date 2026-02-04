@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: calc(100vw - 15px); */
+    width: 100vwcalc(100vw - 15px);
+    height: 100vh;
+    /* background: #f0f0f0; */
+    /* background: #babbf6; */
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header {
+    flex-basis: 10%;
+    background: #babbf6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2rem 0.2rem;
+}
+
+.header img {
+    border-radius: 10%;
+}
+
+.header p {
+    font-size: 1.3rem;
+    color: #333333;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.badge img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.5rem;
+}
+
+#user-label img {
+    mix-blend-mode: screen;
+}
+
+#computer-label img {
+    mix-blend-mode: multiply;
+}
+
+#computer-score,
+#user-score {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    color: #333333;
+}
+
+main {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 2rem; */
+}
+
+.play-area {
+    background: #ffffff;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    background: #babbf6;
+}
+
+.choice {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.choice img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer {
+    flex-basis: 10%;
+    background: #babbf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333333;
+}
